@@ -556,6 +556,7 @@ trait Attrs[Builder, Output <: FragT, FragT] extends Util[Builder, Output, FragT
   val rules = "rules".attr
   val scheme = "scheme".attr
   val scope = "scope".attr
+  val shape = "shape".attr
   val standby = "standby".attr
   val summary = "summary".attr
   val usemap = "usemap".attr
