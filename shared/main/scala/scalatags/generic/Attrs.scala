@@ -450,8 +450,6 @@ trait Attrs[Builder, Output <: FragT, FragT] extends Util[Builder, Output, FragT
    * MDN
    */
   val tabindex = "tabindex".attr
-<<<<<<< HEAD
-=======
   /**
    * The attribute describes the role(s) the current element plays in the 
    * context of the document. This can be used, for example, 
@@ -468,30 +466,8 @@ trait Attrs[Builder, Output <: FragT, FragT] extends Util[Builder, Output, FragT
    * @see: http://www.w3.org/TR/role-attribute/#s_role_module_attributes
    */
   val role = "role".attr
-  /**
-   * This attribute gives the value associated with the http-equiv or name
-   * attribute, depending of the context.
-   * 
-   * MDN
-   */
-  val content = "content".attr
-  /**
-   * This enumerated attribute defines the pragma that can alter servers and
-   * user-agents behavior. The value of the pragma is defined using the content
-   * attribute and can be one of the following:
-   *
-   *   - content-language 
-   *   - content-type 
-   *   - default-style
-   *   - refresh
-   *   - set-cookie
-   *   
-   * MDN
-   */
-  val httpEquiv = "http-equiv".attr
-}
->>>>>>> 3f8e181a3e358e2b0457becea5c9844b776f6e5b
-
+  //XXX /**
+  //XXX  * This attribute gives the value associated with the http-equivhttp-equiv".attr
   /**
    * This attribute contains a non-negative integer value that indicates for how
    * many rows the cell extends. Its default value is 1; if its value is set to 0, it
@@ -502,7 +478,6 @@ trait Attrs[Builder, Output <: FragT, FragT] extends Util[Builder, Output, FragT
    * MDN
    */
   val rowspan   = "rowspan".attr
-
   /**
    * This attribute contains a non-negative integer value that indicates for how
    * many columns the cell extends. Its default value is 1; if its value is set to 0, it
@@ -517,7 +492,6 @@ trait Attrs[Builder, Output <: FragT, FragT] extends Util[Builder, Output, FragT
    * MDN
    */
   val colspan   = "colspan".attr
-
   /**
    * The direction in which the child elements of the element are placed.
    *
@@ -537,7 +511,6 @@ trait Attrs[Builder, Output <: FragT, FragT] extends Util[Builder, Output, FragT
    * MDN
    */
   val dir       = "dir".attr
-
   /**
    * Indicates whether the element is selected or not. This value is read-only.
    * To change the selection, set either the selectedIndex or selectedItem property of
@@ -547,4 +520,58 @@ trait Attrs[Builder, Output <: FragT, FragT] extends Util[Builder, Output, FragT
    */
   val selected  = "selected".attr
 
+  val abbr = "abbr".attr
+  val accesskey = "accesskey".attr
+  val align = "align".attr
+  val alink = "alink".attr
+  val archive = "archive".attr
+  val axis = "axis".attr
+  val bgcolor = "bgcolor".attr
+  val char = "char".attr
+  val charoff = "charoff".attr
+  val codebase = "codebase".attr
+  val compact = "compact".attr
+  val coords = "coords".attr
+  val data = "data".attr
+  val datafld = "datafld".attr
+  val datetime = "datetime".attr
+  val declare = "declare".attr
+  val defer = "defer".attr
+  val event = "event".attr
+  val face = "face".attr
+  val frame = "frame".attr
+  val headers = "headers".attr
+  val hspace = "hspace".attr
+  val ismap = "ismap".attr
+  val longdesc = "longdesc".attr
+  val maxlength = "maxlength".attr
+  val media = "media".attr
+  val multiple = "multiple".attr
+  val noshade = "noshade".attr
+  val ondblclick = "ondblclick".attr
+  val onunload = "onunload".attr
+  val profile = "profile".attr
+  val prompt = "prompt".attr
+  val rev = "rev".attr
+  val rules = "rules".attr
+  val scheme = "scheme".attr
+  val scope = "scope".attr
+  val standby = "standby".attr
+  val summary = "summary".attr
+  val usemap = "usemap".attr
+  val valign = "valign".attr
+  val vlink = "vlink".attr
+  val vspace = "vspace".attr
+
+
+  // I guess these were already declared somewhere else
+
+  //-- val background = "background".attr
+  //-- val border = "border".attr
+  //-- val cite = "cite".attr
+  //-- val code = "code".attr
+  //-- val color = "color".attr
+  //-- val label = "label".attr
+  //--val link = "link".attr
+  //-- val `object` = "object".attr
 }
