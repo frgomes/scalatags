@@ -466,8 +466,6 @@ trait Attrs[Builder, Output <: FragT, FragT] extends Util[Builder, Output, FragT
    * @see: http://www.w3.org/TR/role-attribute/#s_role_module_attributes
    */
   val role = "role".attr
-  //XXX /**
-  //XXX  * This attribute gives the value associated with the http-equivhttp-equiv".attr
   /**
    * This attribute contains a non-negative integer value that indicates for how
    * many rows the cell extends. Its default value is 1; if its value is set to 0, it
@@ -542,6 +540,7 @@ trait Attrs[Builder, Output <: FragT, FragT] extends Util[Builder, Output, FragT
   val frame = "frame".attr
   val headers = "headers".attr
   val hspace = "hspace".attr
+  val `http-equiv` = "http-equiv".attr
   val ismap = "ismap".attr
   val longdesc = "longdesc".attr
   val maxlength = "maxlength".attr
